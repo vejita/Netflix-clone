@@ -1,0 +1,107 @@
+
+@API_KEY = xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+GET https://api.themoviedb.org/3/trending/all/week?api_key=5e6bf1da9afe9aae627b882d61d1eaa3&language=en=US
+###
+
+
+GET https://api.themoviedb.org/3/discover/tv?api_key={{API_KEY}}&with_networks=213
+
+###
+GET https://api.themoviedb.org/3/movie/top_rated?api_key={{API_KEY}}&language=en=US
+###
+GET https://api.themoviedb.org/3/movie/550?api_key={{API_KEY}}&callback=test
+
+###
+
+GET https://api.themoviedb.org/3/discover/tv?api_key={{API_KEY}}&language=en-US&region=US&sort_by=release_date.asc&networks=Netflix&release_date.gte=2017-05-01
+###
+# fetchComedyMovies
+GET https://api.themoviedb.org/3/discover/movie?api_key={{API_KEY}}&with_genres=35
+###
+GET https://api.themoviedb.org/3/discover/tv?api_key={{API_KEY}}&language=en-US
+
+
+###
+#get movie by id
+GET https://api.themoviedb.org/3/movie/440249?api_key={{API_KEY}}&language=en-US
+
+###
+# get netflix original by id
+GET https://api.themoviedb.org/3/tv/63174?api_key={{API_KEY}}&language=en-US
+
+# season img url https://image.tmdb.org/t/p/original/bQ5FupU7DFTbx9pSgPsEZQwyZKj.jpg
+###
+# fetchComedyMovies
+GET https://api.themoviedb.org/3/discover/movie?api_key={{API_KEY}}&with_genres=35
+
+###
+
+# ___________________________________________________________________
+
+@ID = 63174
+@season_number =1
+# gET TRELER OF SERIES NETFLIX IMPO
+# https://api.themoviedb.org/3/tv/{tv_id}/season/{season_number}/videos?api_key=<<api_key>>&language=en-US
+GET https://api.themoviedb.org/3/tv/{{ID}}/season/{{season_number}}/videos?api_key={{API_KEY}}&language=en-US 
+
+
+###
+# TRANSCRIPT
+GET https://api.themoviedb.org/3/tv/{{ID}}/season/{{season_number}}/translations?api_key={{API_KEY}}&language=en-US 
+
+###
+# IMAGES IMPO
+GET https://api.themoviedb.org/3/tv/{{ID}}/season/{{season_number}}/images?api_key={{API_KEY}}&language=en-US
+
+###
+
+
+# tv
+# NET FLIX PE CHL RHA H 
+GET https://api.themoviedb.org/3/tv/{{ID}}/videos?api_key={{API_KEY}}&language=en-US
+
+###
+# SILILAR
+GET https://api.themoviedb.org/3/tv/{{ID}}/similar?api_key={{API_KEY}}&language=en-US&page=2
+
+###
+# Recommendations
+GET https://api.themoviedb.org/3/tv/{{ID}}/recommendations?api_key={{API_KEY}}&language=en-US&page=1
+
+###
+
+GET https://api.themoviedb.org/3/tv/{{ID}}/images?api_key={{API_KEY}}&language=en-US
+
+
+
+###
+# SARCH MOVIES
+GET https://api.themoviedb.org/3/search/movie?api_key={{API_KEY}}&language=en-US&query=avengers%20&page=1&include_adult=false
+###
+GET https://api.themoviedb.org/3/tv/episode_group/{{ID}}?api_key={{API_KEY}}&language=en-US
+
+###
+# GET gENERS
+GET https://api.themoviedb.org/3/genre/movie/list?api_key={{API_KEY}}&language=en-US
+
+
+###
+# TRENDING tv movies 
+GET https://api.themoviedb.org/3/trending/tv/day?api_key={{API_KEY}}&with_networks=213
+
+
+
+
+
+
+
+###
+GET https://api.themoviedb.org/3/movie/top_rated?api_key={{API_KEY}}&language=en-US&with_networks=213
+
+###
+GET https://api.themoviedb.org/3/movie/popular?api_key={{API_KEY}}&language=en-US&page=1&page=2&with_networks=213
+# ++++
+###
+GET https://api.themoviedb.org/3/genre/movie/list?api_key={{API_KEY}}&language=en-US
+###
+GET https://api.themoviedb.org/3/discover/tv?api_key={{API_KEY}}&page=30&with_networks=213
